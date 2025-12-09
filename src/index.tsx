@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App'; // Sửa đường dẫn trỏ vào App trong components
+import { App } from './components/App'; // Sửa đường dẫn trỏ vào App trong components
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
