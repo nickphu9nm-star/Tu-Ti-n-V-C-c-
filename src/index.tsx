@@ -1,11 +1,10 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { App } from './App';
+import ReactDOM from 'react-dom/client';
+import App from './App'; // Đã sửa: bỏ chữ /src thừa đi
+import './index.css'; // Giữ nguyên dòng này nếu bạn có file css
 
-const container = document.getElementById('root');
-const root = createRoot(container!);
-root.render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)
